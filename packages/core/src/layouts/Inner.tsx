@@ -390,8 +390,7 @@ export const Inner: React.FC<{
             return;
         }
         if (
-            (stateRef.current.pageIndex === -1 && currentPage === initialPage) ||
-            (currentPage === stateRef.current.pageIndex && currentPage !== initialPage)
+            (stateRef.current.pageIndex === -1 && currentPage === initialPage)
         ) {
             onPageChange({ currentPage, doc });
         }
